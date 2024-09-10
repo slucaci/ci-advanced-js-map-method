@@ -11,14 +11,27 @@ for (let num of nums) {
   results.push(num * 2);
 }
 
-console.log(restults);
+console.log(results);
 
 // Using map()
 
+const multByTwo = function (num) {
+  return num * 2;
+};
+const mapResults = nums.map(multByTwo);
+console.log(mapResults);
+
 // Simplified w/ map()
+
+const simplified = nums.map(function (num) {
+  return num * 2;
+});
+console.log(simplified);
 
 // Simplfied w/ map() + arrow function
 
+const arrow = nums.map((num) => num * 2);
+console.log(arrow);
 // With objects:
 const students = [
   {
